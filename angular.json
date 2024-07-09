@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "angular_18_login_with_local_storage": {
+    "login_with_local_storage": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/angular_18_login_with_local_storage",
+            "outputPath": "dist/login_with_local_storage",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -60,10 +60,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "angular_18_login_with_local_storage:build:production"
+              "buildTarget": "login_with_local_storage:build:production"
             },
             "development": {
-              "buildTarget": "angular_18_login_with_local_storage:build:development"
+              "buildTarget": "login_with_local_storage:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -93,5 +93,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "4ddc1c13-e80d-42e3-a542-c664e9a1284d"
   }
 }
